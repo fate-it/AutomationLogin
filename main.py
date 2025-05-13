@@ -89,6 +89,7 @@ def run(playwright: Playwright, username: str, password: str) -> None:
         flag += 1
 
     page.screenshot(path="screenshot.png", full_page=True) #робить знімок екрану
+    print("Зроблено фінальний знімок")
     browser.close()
 
 
